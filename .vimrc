@@ -1,4 +1,4 @@
- syntax enable 
+syntax enable 
 set mouse=a
 set noerrorbells
 set number
@@ -26,12 +26,17 @@ so ~/.config/nvim/pluggins.vim
 
 let g:vim_monokai_tasty_italic = 1
 colorscheme vim-monokai-tasty
+"colorscheme gruvbox
+
+"let g:gruvbox_transparent_bg = 1
+"let g:gruvbox_contrast_light = 1
+
+
+
 let NERDTreeQuitOnOpen=1
+let NERDTreeShowHidden=1
 
 let mapleader=" "
-
-nmap <F5> :source %<CR>
-vmap <F5> :source %<CR>
 
 noremap <up> <nop>
 noremap <down> <nop>
@@ -101,3 +106,7 @@ nnoremap <leader>xq :Codi!<CR>
 "[count]<leader>cl |NERDCommenterAlignLeft [count]<leader>cb |NERDCommenterAlignBoth
 "[count]<leader>cu |NERDCommenterUncomment|
 
+
+nnoremap <leader>b :Bracey<CR>
+nnoremap <leader>bs :BraceyStop<CR>
+nnoremap <leader>br :BraceyReload<CR>
